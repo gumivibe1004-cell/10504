@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선주고 1학년5반4번 홈페이지 - IT vs 반도체: 당신의 테크 트랙은?</title>
+    <link href="https://fonts.googleapis.com/css2?family=D2Coding&family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container logo-area">
+            <span class="logo">⚡ TECH_BATTLE: <span class="it-color">IT/SW</span> vs <span class="semi-color">반도체/HW</span></span>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tag">선주고 1학년 5반 4번 홈페이지 -🚀 이공계 필수 진로 가이드</div>
+            <h1>"버그 잡는 <span class="it-color">소프트웨어</span> 할래,<br>1나노 설계하는 <span class="semi-color">반도체</span> 할래?"</h1>
+            <p>코드 작성부터 최첨단 회로 설계까지!<br>내 적성에 맞는 IT 및 반도체 커리어 트랙과 고등학생 준비 전략을 확인해 보세요.</p>
+            <button class="btn-main" onclick="scrollSection('quiz')">🎲 3초 진로 뽑기 시작</button>
+        </div>
+    </section>
+
+    <!-- VS 비교 섹션 -->
+    <section class="container section">
+        <h2 class="title">🔥 IT vs 반도체 비교</h2>
+        <div class="vs-grid">
+            <div class="vs-card it-card">
+                <div class="emoji">💻</div>
+                <h3>IT / 소프트웨어</h3>
+                <p class="quote">"머릿속 생각을 모니터 위의 서비스로!"</p>
+                <ul>
+                    <li>✅ 무기: 노트북 한 대와 개발 환경</li>
+                    <li>✅ 장점: 높은 유연성, 빠른 결과물 확인</li>
+                    <li>❌ 단점: 끊임없이 변화하는 기술 공부</li>
+                    <li>💬 세 줄 요약: <code>while(alive) { code(); }</code></li>
+                </ul>
+            </div>
+
+            <div class="vs-vs">VS</div>
+
+            <div class="vs-card semi-card">
+                <div class="emoji">🔬</div>
+                <h3>반도체 / 하드웨어</h3>
+                <p class="quote">"모든 디지털 세상을 움직이는 핵심 뼈대!"</p>
+                <ul>
+                    <li>✅ 무기: EDA 설계 툴과 클린룸</li>
+                    <li>✅ 장점: 국가 핵심 산업, 압도적 자본과 인프라</li>
+                    <li>❌ 단점: 미세 공정에 대한 높은 정밀도 요구</li>
+                    <li>💬 세 줄 요약: <code>Wait... Is that 1nm?! 😱</code></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 대표 진로 섹션 -->
+    <section id="fields" class="section bg-dark-section">
+        <div class="container">
+            <h2 class="title">🎯 IT & 반도체 주요 진로</h2>
+            
+            <div class="job-grid">
+                <!-- 카드 1: IT SW -->
+                <div class="job-card">
+                    <div class="card-badge badge-it">IT / SW</div>
+                    <div class="card-icon">💻</div>
+                    <h3>풀스택 & 백엔드 개발자</h3>
+                    <p>웹/앱 서비스의 핵심 로직과 데이터베이스를 구축하고 사용자가 이용하는 시스템 전반을 개발합니다.</p>
+                    <div class="card-tags">
+                        <span>#Python</span>
+                        <span>#Java</span>
+                        <span>#Node.js</span>
+                    </div>
+                    <button class="btn-card" onclick="openModal('sw_dev')">자세히 보기</button>
+                </div>
+
+                <!-- 카드 2: AI / 데이터 -->
+                <div class="job-card">
+                    <div class="card-badge badge-it">IT / AI</div>
+                    <div class="card-icon">🤖</div>
+                    <h3>AI & 머신러닝 엔지니어</h3>
+                    <p>인공지능 알고리즘을 설계하고 대규모 데이터를 학습시켜 지능형 서비스를 구현합니다.</p>
+                    <div class="card-tags">
+                        <span>#PyTorch</span>
+                        <span>#TensorFlow</span>
+                        <span>#DeepLearning</span>
+                    </div>
+                    <button class="btn-card" onclick="openModal('ai_eng')">자세히 보기</button>
+                </div>
+
+                <!-- 카드 3: 반도체 회로 설계 -->
+                <div class="job-card">
+                    <div class="card-badge badge-semi">반도체 / HW</div>
+                    <div class="card-icon">🔬</div>
+                    <h3>반도체 회로 설계 엔지니어</h3>
+                    <p>디지털 및 아날로그 회로를 설계하고 집적회로(IC)의 동작과 성능을 검증합니다.</p>
+                    <div class="card-tags">
+                        <span>#Verilog</span>
+                        <span>#CADENCE</span>
+                        <span>#회로이론</span>
+                    </div>
+                    <button class="btn-card" onclick="openModal('circuit_design')">자세히 보기</button>
+                </div>
+
+                <!-- 카드 4: 반도체 공정/장비 -->
+                <div class="job-card">
+                    <div class="card-badge badge-semi">반도체 / HW</div>
+                    <div class="card-icon">⚙️</div>
+                    <h3>반도체 공정 & 장비 엔지니어</h3>
+                    <p>8대 공정을 기반으로 클린룸 내 제조 공정을 최적화하고 수율(Yield)을 극대화합니다.</p>
+                    <div class="card-tags">
+                        <span>#8대공정</span>
+                        <span>#수율개선</span>
+                        <span>#클린룸</span>
+                    </div>
+                    <button class="btn-card" onclick="openModal('process_eng')">자세히 보기</button>
+                </div>
+
+                <!-- 카드 5: 임베디드 SW -->
+                <div class="job-card">
+                    <div class="card-badge badge-hybrid">HW+SW</div>
+                    <div class="card-icon">📟</div>
+                    <h3>임베디드 시스템 개발자</h3>
+                    <p>하드웨어 칩 위에 직접 제어 코드를 올려 디바이스를 효율적으로 제어하는 시스템 소프트웨어를 개발합니다.</p>
+                    <div class="card-tags">
+                        <span>#C/C++</span>
+                        <span>#MCU</span>
+                        <span>#Firmware</span>
+                    </div>
+                    <button class="btn-card" onclick="openModal('embedded')">자세히 보기</button>
+                </div>
+
+                <!-- 카드 6: AI 반도체 (NPU) -->
+                <div class="job-card highlight-card">
+                    <div class="card-badge badge-hybrid">HOT 융합</div>
+                    <div class="card-icon">⚡</div>
+                    <h3>AI 반도체 (NPU) 설계자</h3>
+                    <p>AI 연산을 초고속·저전력으로 처리하기 위한 차세대 지능형 반도체 아키텍처를 설계합니다.</p>
+                    <div class="card-tags">
+                        <span>#NPU</span>
+                        <span>#SystemVerilog</span>
+                        <span>#AI_HW</span>
+                    </div>
+                    <button class="btn-card btn-highlight" onclick="openModal('npu_design')">자세히 보기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고등학생 준비 방법 TOP 4 섹션 -->
+    <section id="highschool-prep" class="section container">
+        <h2 class="title">🎓 고등학생 준비 방법 TOP 4</h2>
+        <p class="text-center subtitle-desc">IT 및 반도체 전공 진학을 위해 고등학교 재학 중 미리 쌓아야 할 필수 역량</p>
+
+        <div class="prep-grid">
+            <!-- 1. 프로그래밍 기초 -->
+            <div class="prep-card">
+                <div class="prep-number">01</div>
+                <div class="prep-icon">🐍</div>
+                <h3>Python / C언어 프로그래밍 입문</h3>
+                <p>기초 문법을 익히고 문제 해결을 위한 논리적 사고력(컴퓨팅 사고)을 기르세요.</p>
+                <ul class="prep-list">
+                    <li><b>추천 활동:</b> 백준/프로그래머스 기초 문제풀이 및 문제 해결 과정 기록</li>
+                    <li><b>생기부 팁:</b> 정보 교과 세특에 '실생활 문제 해결 알고리즘 제작' 탐구 작성</li>
+                </ul>
+            </div>
+
+            <!-- 2. 물리학 및 수학 탐구 -->
+            <div class="prep-card">
+                <div class="prep-number">02</div>
+                <div class="prep-icon">⚡</div>
+                <h3>물리학Ⅱ·미적분·기하 심화 학습</h3>
+                <p>반도체와 컴퓨팅의 근본은 수학과 물리학입니다. 관련 개념을 깊이 있게 학습하세요.</p>
+                <ul class="prep-list">
+                    <li><b>추천 활동:</b> 전자기학, 파동, 트랜지스터 동작 원리 독서 및 보고서 작성</li>
+                    <li><b>생기부 팁:</b> 'P-N 접합 반도체의 원리와 에너지 띠 이론' 주제 탐구</li>
+                </ul>
+            </div>
+
+            <!-- 3. 하드웨어 키트 실습 -->
+            <div class="prep-card">
+                <div class="prep-number">03</div>
+                <div class="prep-icon">🔌</div>
+                <h3>아두이노 & 라즈베리 파이 프로젝트</h3>
+                <p>소프트웨어 코드가 실제 하드웨어 센서 및 모터를 제어하는 과정을 직접 경험해보세요.</p>
+                <ul class="prep-list">
+                    <li><b>추천 활동:</b> 센서 데이터를 수집하여 모터를 제어하는 소형 디바이스 제작</li>
+                    <li><b>생기부 팁:</b> 동아리 활동 중 'IoT 기반 환경 감지 시스템' 제작 및 발표</li>
+                </ul>
+            </div>
+
+            <!-- 4. 공학 융합 탐구 -->
+            <div class="prep-card">
+                <div class="prep-number">04</div>
+                <div class="prep-icon">📑</div>
+                <h3>IT·반도체 기술 동향 분석 및 탐구 보고서</h3>
+                <p>최신 기술 이슈(AI 반도체, 초미세 공정 등)를 조사하고 자신만의 견해를 정리해보세요.</p>
+                <ul class="prep-list">
+                    <li><b>추천 활동:</b> IEEE, 기술 블로그, IT 뉴스 논제 분석 후 요약 정리</li>
+                    <li><b>생기부 팁:</b> 'NPU와 GPU의 구조적 차이와 효율성 비교' 소논문 형태 작성</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 퀴즈 섹션 -->
+    <section id="quiz" class="section bg-dark container">
+        <div class="quiz-box">
+            <h2>🧪 IT vs 반도체 성향 진단기</h2>
+            <p id="quiz-subtitle">다음 중 당신의 선호에 가까운 상황은?</p>
+
+            <div id="quiz-step">
+                <h3 id="question">1. 문제가 생겼을 때 나의 문제 해결 방식은?</h3>
+                <div class="quiz-options">
+                    <button class="btn-opt" onclick="answer('it')">💻 코드를 한 줄씩 추적하며 로직과 오류를 수정한다.</button>
+                    <button class="btn-opt" onclick="answer('semi')">🔬 회로 연결이나 공정 매개변수, 회로 신호를 체크한다.</button>
+                </div>
+            </div>
+
+            <div id="quiz-result" class="hidden">
+                <div id="result-emoji" class="result-emoji">🎉</div>
+                <h3 id="result-title">결과 분석 중...</h3>
+                <p id="result-desc"></p>
+                <button class="btn-main" onclick="restartQuiz()">🔄 다시 테스트하기</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 진로 응원 문구 섹션 -->
+    <section class="container section text-center">
+        <div class="cheer-card">
+            <h2>✨ 미래 엔지니어를 위한 응원 한마디</h2>
+            <p>버튼을 누르면 IT/반도체 꿈나무를 위한 랜덤 응원 문구가 출력됩니다.</p>
+            <button onclick="generateCheerMessage()" class="btn-cheer">🍀 응원 문구 뽑기</button>
+            <div id="cheer-message" class="cheer-box hidden">
+                <span id="cheer-text"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 이스터에그 미니게임 -->
+    <section class="container section text-center">
+        <h2>☕ 카페인 전투력 측정기</h2>
+        <p>하루에 마시는 커피 잔 수를 입력하고 개발자/엔지니어 등급을 확인하세요!</p>
+        <div class="coffee-calculator">
+            <input type="number" id="coffee-count" placeholder="예: 3" min="0" max="20">
+            <button onclick="calcCaffeine()" class="btn-sub">측정하기</button>
+            <div id="coffee-result" class="coffee-res"></div>
+        </div>
+    </section>
+
+    <!-- 모달 팝업 구조 -->
+    <div id="job-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-badge" class="card-badge"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <hr>
+            <h4>📌 추천 커리어 로드맵</h4>
+            <ul id="modal-roadmap"></ul>
+            <div id="modal-tip"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created for Future Engineers 🚀 | IT & 반도체 분야 진로 가이드</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진로 적성 퀴즈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 기존 사이트 영역이 있어도 아래 영역 내에서만 스타일이 적용됩니다 -->
+  <div class="career-quiz-wrapper">
+    <div class="career-quiz-card">
+      
+      <header class="career-quiz-header">
+        <h1 class="career-quiz-title">🚀 나에게 맞는 직업 탐색기</h1>
+        <p class="career-quiz-subtitle">간단한 질문을 통해 나만의 적성 직군을 찾아보세요.</p>
+      </header>
+
+      <!-- 진행률 바 -->
+      <div class="career-quiz-progress-wrap" id="quizProgressWrap">
+        <div class="career-quiz-progress-bar" id="quizProgressBar"></div>
+      </div>
+
+      <!-- 1. 시작 화면 -->
+      <div class="career-quiz-screen" id="quizStartScreen">
+        <div class="career-quiz-icon">🧩</div>
+        <p class="career-quiz-desc">총 3개의 질문으로 알아보는 간단 진로 적성 테스트입니다.</p>
+        <button type="button" class="career-quiz-btn-primary" id="quizStartBtn">퀴즈 시작하기</button>
+      </div>
+
+      <!-- 2. 퀴즈 진행 화면 -->
+      <div class="career-quiz-screen career-quiz-hidden" id="quizPlayScreen">
+        <div class="career-quiz-question" id="quizQuestionTitle">질문이 여기에 표시됩니다.</div>
+        <div class="career-quiz-options" id="quizOptionsContainer">
+          <!-- JS로 선택지 버튼 들어옴 -->
+        </div>
+      </div>
+
+      <!-- 3. 결과 화면 -->
+      <div class="career-quiz-screen career-quiz-hidden" id="quizResultScreen">
+        <span class="career-quiz-badge">진단 결과</span>
+        <h2 class="career-quiz-result-title" id="quizResultTitle">추천 직군</h2>
+        <p class="career-quiz-result-desc" id="quizResultDesc">직군 설명이 들어갑니다.</p>
+        <button type="button" class="career-quiz-btn-primary" id="quizResetBtn">다시 테스트하기</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* 폰트 및 글로벌 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+}
+
+code {
+    font-family: 'D2Coding', monospace;
+    background: #21262d;
+    color: #79c0ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.it-color { color: #ff7b72; }
+.semi-color { color: #7ee787; }
+
+/* Header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #30363d;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Jua', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(88,166,255,0.1) 0%, rgba(13,17,23,1) 80%);
+}
+
+.tag {
+    display: inline-block;
+    background: #238636;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    background: linear-gradient(90deg, #238636, #2ea043);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(46, 160, 67, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 20px;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(46, 160, 67, 0.7);
+}
+
+/* VS Section */
+.section { padding: 60px 0; }
+.title { text-align: center; font-family: 'Jua', sans-serif; font-size: 32px; margin-bottom: 40px; }
+
+.vs-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs-card {
+    background: #161b22;
+    border: 2px solid #30363d;
+    border-radius: 16px;
+    padding: 25px 20px;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+.it-card:hover { border-color: #ff7b72; }
+.semi-card:hover { border-color: #7ee787; }
+
+.emoji { font-size: 44px; text-align: center; margin-bottom: 10px; }
+.vs-card h3 { text-align: center; font-size: 20px; margin-bottom: 10px; }
+.quote { text-align: center; color: #8b949e; font-style: italic; margin-bottom: 20px; font-size: 13px; }
+.vs-card ul { list-style: none; font-size: 14px; }
+.vs-card li { margin-bottom: 10px; }
+
+.vs-vs {
+    font-family: 'Jua', sans-serif;
+    font-size: 28px;
+    color: #ffa657;
+    text-shadow: 0 0 10px #ffa657;
+}
+
+/* 진로 카드 그리드 레이아웃 */
+.bg-dark-section {
+    background-color: #010409;
+    border-top: 1px solid #21262d;
+    border-bottom: 1px solid #21262d;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.job-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    border-color: #58a6ff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.highlight-card {
+    border: 1px solid #79c0ff;
+    background: linear-gradient(180deg, #1f242d 0%, #161b22 100%);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.badge-it { background: rgba(255, 123, 114, 0.15); color: #ff7b72; border: 1px solid #ff7b72; }
+.badge-semi { background: rgba(126, 231, 135, 0.15); color: #7ee787; border: 1px solid #7ee787; }
+.badge-hybrid { background: rgba(210, 168, 255, 0.2); color: #d2a8ff; border: 1px solid #d2a8ff; }
+
+.card-icon { font-size: 40px; margin-bottom: 15px; }
+.job-card h3 { font-size: 19px; color: #f0f6fc; margin-bottom: 10px; }
+.job-card p { font-size: 13px; color: #8b949e; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
+
+.card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card-tags span {
+    font-size: 11px;
+    background: #21262d;
+    color: #79c0ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.btn-card {
+    width: 100%;
+    padding: 10px;
+    background: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-card:hover { background: #30363d; color: #ffffff; }
+.btn-highlight { background: #238636; color: #ffffff; border: none; }
+.btn-highlight:hover { background: #2ea043; }
+
+/* 고등학생 준비 방법 스타일 */
+.subtitle-desc {
+    color: #8b949e;
+    font-size: 15px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.prep-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.prep-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.prep-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.prep-number {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+    font-family: 'Jua', sans-serif;
+    color: #30363d;
+    font-weight: bold;
+}
+
+.prep-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.prep-card h3 {
+    font-size: 18px;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.prep-card p {
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.prep-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    border-top: 1px dashed #30363d;
+    padding-top: 12px;
+}
+
+.prep-list li {
+    color: #c9d1d9;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.prep-list li::before {
+    content: "•";
+    color: #58a6ff;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* 퀴즈 섹션 */
+.bg-dark {
+    background-color: #161b22;
+    border-radius: 20px;
+    border: 1px solid #30363d;
+    margin-top: 40px;
+}
+
+.quiz-box { text-align: center; padding: 40px 20px; }
+.quiz-options { display: flex; flex-direction: column; gap: 12px; margin-top: 25px; }
+
+.btn-opt {
+    background: #21262d;
+    color: white;
+    border: 1px solid #30363d;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    text-align: left;
+}
+
+.btn-opt:hover { background: #30363d; border-color: #58a6ff; }
+.hidden { display: none !important; }
+.result-emoji { font-size: 60px; margin-bottom: 10px; }
+
+/* 진로 응원 문구 카드 스타일 */
+.cheer-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 35px 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cheer-card h2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 26px;
+    color: #f0f6fc;
+    margin-bottom: 10px;
+}
+
+.cheer-card p {
+    color: #8b949e;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-cheer {
+    background: linear-gradient(135deg, #1f6beb, #2ea043);
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Jua', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(31, 107, 235, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-cheer:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 0 20px rgba(46, 160, 67, 0.6);
+}
+
+.cheer-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #0d1117;
+    border: 1px solid #58a6ff;
+    border-radius: 12px;
+    color: #79c0ff;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.6;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 커피 계산기 */
+.text-center { text-align: center; }
+.coffee-calculator { margin-top: 20px; }
+.coffee-calculator input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: white;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn-sub {
+    padding: 10px 20px;
+    background: #1f6beb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.coffee-res { margin-top: 15px; font-size: 18px; font-weight: bold; color: #ffa657; }
+
+/* 모달 팝업 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 520px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.modal-content h2 { margin-top: 15px; color: #f0f6fc; }
+.modal-content p { color: #8b949e; margin: 15px 0; }
+.modal-content hr { border: 0; border-top: 1px solid #30363d; margin: 15px 0; }
+.modal-content h4 { color: #58a6ff; margin-bottom: 10px; }
+.modal-content ul { text-align: left; padding-left: 20px; color: #c9d1d9; }
+.modal-content li { margin-bottom: 6px; }
+
+#modal-tip {
+    margin-top: 15px;
+    padding: 10px;
+    background: #21262d;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #79c0ff;
+    text-align: left;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #8b949e;
+    cursor: pointer;
+}
+
+.modal-close:hover { color: #ffffff; }
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #8b949e;
+    font-size: 12px;
+    border-top: 1px solid #30363d;
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 900px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vs-grid, .prep-grid {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .job-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 퀴즈 전용 최상위 독립 박스 */
+.career-quiz-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.career-quiz-wrapper * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif !important;
+}
+
+/* 카드 용기 */
+.career-quiz-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+}
+
+/* 헤더 */
+.career-quiz-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.career-quiz-title {
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  line-height: 1.3 !important;
+  word-break: keep-all;
+}
+
+.career-quiz-subtitle {
+  font-size: 0.875rem !important;
+  color: #64748b !important;
+  margin-top: 8px !important;
+  word-break: keep-all;
+}
+
+/* 진행률 바 */
+.career-quiz-progress-wrap {
+  width: 100%;
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: none;
+}
+
+.career-quiz-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+/* 각 화면 상태 */
+.career-quiz-screen {
+  text-align: center;
+}
+
+.career-quiz-hidden {
+  display: none !important;
+}
+
+.career-quiz-icon {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.career-quiz-desc {
+  font-size: 0.95rem !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  margin-bottom: 24px !important;
+  word-break: keep-all;
+}
+
+/* 퀴즈 문제 및 선택지 */
+.career-quiz-question {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #0f172a !important;
+  text-align: left;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+  word-break: keep-all;
+}
+
+.career-quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.career-quiz-option-btn {
+  width: 100% !important;
+  padding: 14px 16px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  font-size: 0.925rem !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  line-height: 1.4 !important;
+  word-break: keep-all;
+  transition: all 0.2s ease;
+}
+
+.career-quiz-option-btn:hover {
+  border-color: #4f46e5 !important;
+  background-color: #f5f3ff !important;
+  color: #4f46e5 !important;
+}
+
+/* 결과창 */
+.career-quiz-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  font-weight: 600;
+  border-radius: 9999px;
+  font-size: 0.8rem !important;
+  margin-bottom: 12px;
+}
+
+.career-quiz-result-title {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  margin-bottom: 12px !important;
+  word-break: keep-all;
+}
+
+.career-quiz-result-desc {
+  font-size: 0.9rem !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 24px !important;
+  word-break: keep-all;
+  text-align: left;
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}
+
+/* 메인 버튼 */
+.career-quiz-btn-primary {
+  width: 100% !important;
+  padding: 14px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease;
+}
+
+.career-quiz-btn-primary:hover {
+  background-color: #4338ca !important;
+}
+
+// 스크롤 이동
+function scrollSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ==========================================
+   1. 진로 카드 모달(Modal) 기능
+   ========================================== */
+
+const jobDetails = {
+    sw_dev: {
+        title: "💻 풀스택 & 백엔드 개발자",
+        badge: "IT / SW",
+        badgeClass: "badge-it",
+        desc: "웹/앱 서비스 개발부터 서버 아키텍처 구축까지 디지털 플랫폼의 전반적인 개발을 담당합니다.",
+        roadmap: [
+            "1단계: Python, Java 또는 JavaScript 기초 프로그래밍 학습",
+            "2단계: 자료구조, 알고리즘 및 SQL 데이터베이스 학습",
+            "3단계: Spring Boot, Node.js 또는 React 프레임워크 선택 실습",
+            "4단계: Git 기반 협업 포트폴리오 프로젝트 제작"
+        ],
+        tip: "💡 Tip: Github 코드 관리와 프로젝트 단위 알고리즘 해결 능력이 핵심입니다."
+    },
+    ai_eng: {
+        title: "🤖 AI & 머신러닝 엔지니어",
+        badge: "IT / AI",
+        badgeClass: "badge-it",
+        desc: "대규모 데이터셋을 기반으로 딥러닝 모델을 학습시키고 컴퓨터 비전, NLP 등 AI 기술을 개발합니다.",
+        roadmap: [
+            "1단계: Python 프로그래밍 + 선형대수, 확률과 통계 수학 공부",
+            "2단계: PyTorch / TensorFlow 기반 기초 머신러닝 학습",
+            "3단계: CNN, Transformer 등 딥러닝 대표 모델 실습",
+            "4단계: 오픈소스 데이터셋 기반 경진대회(Kaggle) 참여"
+        ],
+        tip: "💡 Tip: 수학적 이해도와 프레임워크를 활용한 모델 경량화 능력이 중요합니다."
+    },
+    circuit_design: {
+        title: "🔬 반도체 회로 설계 엔지니어",
+        badge: "반도체 / HW",
+        badgeClass: "badge-semi",
+        desc: "초미세 집적회로(IC)의 논리 회로 및 아날로그 회로를 설계하고 동작을 검증합니다.",
+        roadmap: [
+            "1단계: 전자기학, 회로이론, 논리회로 기초 수강",
+            "2단계: HDL(Verilog / VHDL)을 이용한 하드웨어 설계 실습",
+            "3단계: EDA 시뮬레이션 툴(Cadence, Synopsys) 사용 법 익히기",
+            "4단계: FPGA 보드를 활용한 회로 동작 및 시뮬레이션 검증"
+        ],
+        tip: "💡 Tip: 회로이론에 대한 탄탄한 기초와 Verilog 작성 숙련도가 필수적입니다."
+    },
+    process_eng: {
+        title: "⚙️ 반도체 공정 & 장비 엔지니어",
+        badge: "반도체 / HW",
+        badgeClass: "badge-semi",
+        desc: "8대 공정(노광, 식각, 증착 등)을 관리하고 수율 향상과 장비 최적화를 담당합니다.",
+        roadmap: [
+            "1단계: 반도체공학, 재료공학, 물리학 기초 수강",
+            "2단계: 8대 공정 흐름 및 단위 공정 원리 상세 분석",
+            "3단계: 데이터 분석(Python, Minitab) 기반 공정 변수 최적화 연습",
+            "4단계: 반도체 라인 실습 및 공정 실습 프로그램 이수"
+        ],
+        tip: "💡 Tip: 공정 변수를 제어하기 위한 문제 분석 능력과 데이터 분석 기법이 유리합니다."
+    },
+    embedded: {
+        title: "📟 임베디드 시스템 개발자",
+        badge: "HW+SW",
+        badgeClass: "badge-hybrid",
+        desc: "마이크로컨트롤러(MCU) 및 하드웨어 칩 상에서 동작하는 펌웨어와 시스템 SW를 개발합니다.",
+        roadmap: [
+            "1단계: C / C++ 프로그래밍 + 컴퓨터 구조 이해",
+            "2단계: MCU(ARM, STM32 등) 회로 분석 및 인터페이스(I2C, SPI) 이해",
+            "3단계: RTOS(실시간 운영체제) 기반 펌웨어 개발",
+            "4단계: 센서 및 모터 통합 하드웨어 제어 프로젝트"
+        ],
+        tip: "💡 Tip: 하드웨어 회로도 읽는 능력과 C언어 메모리 관리 능력이 필수입니다."
+    },
+    npu_design: {
+        title: "⚡ AI 반도체 (NPU) 설계자",
+        badge: "HOT 융합",
+        badgeClass: "badge-hybrid",
+        desc: "소프트웨어 AI 연산을 하드웨어 차원에서 초고속·저전력으로 처리하는 차세대 반도체를 설계합니다.",
+        roadmap: [
+            "1단계: C/C++, Python 프로그래밍 + 회로이론 기초",
+            "2단계: PyTorch 모델 연산 구조 이해 및 AI 모델 경량화 학습",
+            "3단계: SystemVerilog 기반 NPU 아키텍처 설계 및 검증",
+            "4단계: SW-HW 코디자인(Co-design) 프로젝트 수행"
+        ],
+        tip: "💡 Tip: 소프트웨어(AI 알고리즘)와 하드웨어(회로 구조)를 모두 이해하는 희소성 높은 직군입니다."
+    }
+};
+
+function openModal(type) {
+    const data = jobDetails[type];
+    if (!data) return;
+
+    const modalBadge = document.getElementById('modal-badge');
+    modalBadge.innerText = data.badge;
+    modalBadge.className = `card-badge ${data.badgeClass}`;
+
+    document.getElementById('modal-title').innerText = data.title;
+    document.getElementById('modal-desc').innerText = data.desc;
+    document.getElementById('modal-tip').innerText = data.tip;
+
+    const roadmapList = document.getElementById('modal-roadmap');
+    roadmapList.innerHTML = '';
+    data.roadmap.forEach(step => {
+        const li = document.createElement('li');
+        li.innerText = step;
+        roadmapList.appendChild(li);
+    });
+
+    document.getElementById('job-modal').classList.remove('hidden');
+}
+
+function closeModal() {
+    document.getElementById('job-modal').classList.add('hidden');
+}
+
+// 모달 배경 클릭 시 닫기
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('job-modal');
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+});
+
+
+/* ==========================================
+   2. IT vs 반도체 적성 테스트
+   ========================================== */
+
+const quizData = [
+    {
+        q: "1. 문제가 발생했을 때 나에게 더 끌리는 분석 방식은?",
+        it: "소프트웨어 로직과 코드 라인을 추적하며 버그를 잡는다.",
+        semi: "회로 연결, 물리적 신호, 장비 조건을 확인한다."
+    },
+    {
+        q: "2. 더 흥미롭게 느껴지는 분야는?",
+        it: "웹 서비스, AI 모델, 대용량 데이터 처리 소프트웨어",
+        semi: "1나노 미세 회로, 물리적 트랜지스터, 반도체 칩 설계"
+    },
+    {
+        q: "3. 선호하는 작업 환경은?",
+        it: "노트북 한 대와 모니터 여러 대가 갖춰진 개발 환경",
+        semi: "첨단 분석 장비와 회로 설계 시뮬레이터가 있는 연구실"
+    }
+];
+
+let step = 0;
+let scores = { it: 0, semi: 0 };
+
+function answer(type) {
+    scores[type]++;
+    step++;
+
+    if (step < quizData.length) {
+        document.getElementById('question').innerText = quizData[step].q;
+        const btns = document.querySelectorAll('.btn-opt');
+        btns[0].innerText = "💻 " + quizData[step].it;
+        btns[1].innerText = "🔬 " + quizData[step].semi;
+    } else {
+        showResult();
+    }
+}
+
+function showResult() {
+    document.getElementById('quiz-step').classList.add('hidden');
+    const resBox = document.getElementById('quiz-result');
+    resBox.classList.remove('hidden');
+
+    const emoji = document.getElementById('result-emoji');
+    const title = document.getElementById('result-title');
+    const desc = document.getElementById('result-desc');
+
+    if (scores.it >= scores.semi) {
+        emoji.innerText = "👨‍💻";
+        title.innerText = "당신은 타고난 '소프트웨어 엔지니어'!";
+        desc.innerText = "세상을 움직이는 서비스나 AI 알고리즘을 개발할 적성입니다. 코드와 키보드로 세상을 바꿔보세요!";
+    } else {
+        emoji.innerText = "🦾";
+        title.innerText = "당신은 지능형 '반도체·하드웨어 엔지니어'!";
+        desc.innerText = "모든 IT 세상의 기반이 되는 차세대 반도체나 회로를 설계할 적성입니다. 첨단 공학의 핵심에 도전해보세요!";
+    }
+}
+
+function restartQuiz() {
+    step = 0;
+    scores = { it: 0, semi: 0 };
+    document.getElementById('quiz-step').classList.remove('hidden');
+    document.getElementById('quiz-result').classList.add('hidden');
+    
+    document.getElementById('question').innerText = quizData[0].q;
+    const btns = document.querySelectorAll('.btn-opt');
+    btns[0].innerText = "💻 " + quizData[0].it;
+    btns[1].innerText = "🔬 " + quizData[0].semi;
+}
+
+
+/* ==========================================
+   3. 진로 응원 문구 생성기
+   ========================================== */
+
+const cheerMessages = [
+    "💻 'Hello World'를 처음 띄웠던 그 마음처럼, 당신의 미래도 힘차게 시작될 거예요!",
+    "🔬 1나노미터의 오차도 극복하는 반도체처럼, 단단하고 세심한 공학자로 성장하길 응원합니다!",
+    "🚀 오늘 디버깅하며 흘린 땀방울이 머지않아 세상을 바꾸는 소프트웨어가 될 거예요.",
+    "⚡ 회로 속을 흐르는 전류처럼, 당신의 열정도 미래 테크 산업을 밝게 빛낼 것입니다!",
+    "🐛 에러 메시지는 실패가 아니라 성장하는 중이라는 가장 확실한 증거입니다.",
+    "🤖 차세대 AI와 AI 반도체 시대를 이끌어갈 주인공은 바로 당신입니다. 자신감을 가지세요!",
+    "☕ 커피 한 잔과 노트북만 있으면 세상 무엇이든 만들어낼 수 있는 위대한 엔지니어가 될 거예요!"
+];
+
+function generateCheerMessage() {
+    const cheerBox = document.getElementById('cheer-message');
+    const cheerText = document.getElementById('cheer-text');
+
+    // 랜덤 문구 선택
+    const randomIndex = Math.floor(Math.random() * cheerMessages.length);
+    cheerText.innerText = cheerMessages[randomIndex];
+
+    // 박스 표시 및 애니메이션 재실행
+    cheerBox.classList.remove('hidden');
+    cheerBox.style.animation = 'none';
+    cheerBox.offsetHeight; // Reflow 트리거
+    cheerBox.style.animation = 'fadeIn 0.4s ease-in-out';
+}
+
+
+/* ==========================================
+   4. 카페인 등급 측정기
+   ========================================== */
+
+function calcCaffeine() {
+    const count = parseInt(document.getElementById('coffee-count').value);
+    const res = document.getElementById('coffee-result');
+
+    if (isNaN(count) || count < 0) {
+        res.innerText = "올바른 숫자를 입력하세요! 🐛";
+        return;
+    }
+
+    if (count === 0) {
+        res.innerText = "🌱 [자연인 등급] 순수 피로 회복 가능 상태!";
+    } else if (count <= 2) {
+        res.innerText = "☕ [효율파 엔지니어] 적정량으로 최적의 집중력 유지 중!";
+    } else if (count <= 4) {
+        res.innerText = "🔥 [프로젝트 하드캐리] 혈관에 카페인이 흐르고 있습니다.";
+    } else {
+        res.innerText = "🚨 [테크 마스터] 24시간 풀 가동 모드! 수면도 잊으셨나요?!";
+    }
+}
